@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: sample-python-basic
+  name: sample-python-basic
+spec:
+  port:
+    targetPort: 8081-tcp
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: sample-python-basic
+    weight: 100
+  wildcardPolicy: None
+

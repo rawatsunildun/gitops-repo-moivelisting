@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: sample-python-basic
+  name: sample-python-basic
+spec:
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: 8081-tcp
+    port: 8081
+  selector:
+    app: sample-python-basic
+    deployment: sample-python-basic

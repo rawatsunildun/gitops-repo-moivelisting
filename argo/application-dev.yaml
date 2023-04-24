@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: py-app-dev
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: py-app-dev
+    server: https://kubernetes.default.svc 
+  project: default 
+  source: 
+    path: environment/dev
+    repoURL: https://github.com/bbalakriz/sample-python-basic-gitops
+    targetRevision: master
+  syncPolicy: 
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

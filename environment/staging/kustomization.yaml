@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base/
+patchesStrategicMerge:
+- deployment.yaml
+images:
+- digest: sha256:49622064b557a04e79bb5ea6d02092793164c57ba9376ad13aa770b4cddf7f90
+  name: quay.io/balki404/py-app-gha
+  newName: quay.io/balki404/py-app-gha
