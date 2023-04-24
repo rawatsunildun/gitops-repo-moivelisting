@@ -5,6 +5,6 @@ resources:
 patchesStrategicMerge:
 - deployment.yaml
 images:
-- digest: sha256:49622064b557a04e79bb5ea6d02092793164c57ba9376ad13aa770b4cddf7f90
+- digest: sha256:2e69a63f40a5bd4513ea573ee1247597c7b45fec12d590351b8a64dae5ac318f
   name: quay.io/balki404/py-app-gha
   newName: quay.io/balki404/py-app-gha
