@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ../../base/
 images:
-- digest: sha256:fd51419b5d61d153c6b1204e4c1718a9d9fe623d7bf7d505f0c33b2c5cda6ecf
+- digest: sha256:373772203857f2784174d99b90d5d4df7e81f3a6dc8ebf5048d752125104c4e5
   name: quay.io/balki404/py-app-gha
   newName: quay.io/balki404/py-app-gha
