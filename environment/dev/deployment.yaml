@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample-python-basic
+  name: dnapp
 spec:
   replicas: 1
