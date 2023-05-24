@@ -23,7 +23,7 @@ spec:
         deployment: dnapp
     spec:
       containers:
-      - image: quay.io/balki404/dotnet-7.0:dev
+      - image: quay.io/balki404/dotnet-7.0
         imagePullPolicy: Always
         name: dnapp
         terminationMessagePath: /dev/termination-log
