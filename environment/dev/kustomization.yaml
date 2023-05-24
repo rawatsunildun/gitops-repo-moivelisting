@@ -4,5 +4,5 @@ resources:
 - ../../base/
 images:
 - digest: sha256:ee1e851bfabb1103fc0bf5ce83c71661c79b0becb0909adff866b658fea997e1
-  name: my-py-app-gha
-  newName: quay.io/balki404/py-app-gha
+  name: dotnet-7.0
+  newName: quay.io/balki404/dotnet-7.0
