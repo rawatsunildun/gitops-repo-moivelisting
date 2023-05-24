@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: py-app-dev
+  name: dotnet-app-dev
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: py-app-dev
+    namespace: dotnet-app-dev
     server: https://kubernetes.default.svc 
   project: default 
   source: 
     path: environment/dev
-    repoURL: https://github.com/bbalakriz/sample-python-basic-gitops
+    repoURL: https://github.com/bbalakriz/dotnet-tekton-gitops
     targetRevision: master
   syncPolicy: 
     automated:
