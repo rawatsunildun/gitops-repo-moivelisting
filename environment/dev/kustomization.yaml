@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ../../base/
 images:
-- digest: sha256:42f018e2c5258eb8f3c17e3cf5a258a543c470fc9630fbbc66f179f415c36bf7
+- digest: sha256:0b8ca21f3b0d66c4aa7862e6c6a0fbdfaf0c90996b7d4dffdee1bcba790745c8
   name: dotnet-7.0
   newName: quay.io/balki404/dotnet-7.0
