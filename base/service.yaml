@@ -4,7 +4,6 @@ metadata:
   labels:
     app: dnapp
   name: dnapp
-  namespace: balki404-dev
 spec:
   internalTrafficPolicy: Cluster
   ipFamilies:
