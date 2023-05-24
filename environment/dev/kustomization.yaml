@@ -4,5 +4,5 @@ resources:
 - ../../base/
 images:
 - digest: sha256:2e69a63f40a5bd4513ea573ee1247597c7b45fec12d590351b8a64dae5ac318f
-  name: quay.io/balki404/py-app-gha
+  name: my-py-app-gha
   newName: quay.io/balki404/py-app-gha
