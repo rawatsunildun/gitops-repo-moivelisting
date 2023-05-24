@@ -70,21 +70,21 @@ spec:
   - name: git-update-deployment
     params:
     - name: GIT_REPOSITORY
-      value: https://github.com/bbalakriz/python-tekton-gitops/
+      value: https://github.com/bbalakriz/dotnet-tekton-gitops/
     - name: GIT_USERNAME
       value: bbalakriz
     - name: GIT_PASSWORD
-      value: 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
+      value: token
     - name: CURRENT_IMAGE
-      value: my-py-app-gha
+      value: dotnet-7.0
     - name: NEW_IMAGE
-      value: quay.io/balki404/py-app-gha
+      value: quay.io/balki404/dotnet-7.0
     - name: NEW_DIGEST
       value: $(tasks.s2i-dotnet.results.IMAGE_DIGEST)
     - name: KUSTOMIZATION_PATH
       value: environment/dev
     - name: GIT_PROJECT
-      value: python-tekton-gitops
+      value: dotnet-tekton-gitops
     runAfter:
     - s2i-dotnet
     taskRef:
