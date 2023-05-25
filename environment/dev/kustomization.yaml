@@ -5,4 +5,4 @@ resources:
 images:
 - digest: test
   name: dotnet-6.0
-  newName: image-registry.openshift-image-registry.svc:5000/dotnet-myapp/sample-app-2
+  newName: quay.io/narendragomte/sample-app
