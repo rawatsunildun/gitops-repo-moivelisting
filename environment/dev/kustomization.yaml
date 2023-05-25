@@ -5,4 +5,4 @@ resources:
 images:
 - digest: sha256:6d085b5f8703b6b7ffd8fa3e272f1f8920ccc4b92011b34f9abc8a07967587b4
   name: dotnet-6.0
-  newName: image-registry.openshift-image-registry.svc:5000/dotnet-myapp/sample-app-2
+  newName: quay.io/narendragomte/sample-app
