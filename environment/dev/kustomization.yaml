@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ../../base/
 images:
-- digest: sha256:3e834f7f34101baaf468ed8cf104d2d199cf89251fe234f85c7afe1cf264e5f3
-  name: dotnet-7.0
-  newName: quay.io/balki404/dotnet-7.0
+- digest: 1.0
+  name: dotnet-6.0
+  newName: image-registry.openshift-image-registry.svc:5000/dotnet-myapp/sample-app-2
