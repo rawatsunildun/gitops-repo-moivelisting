@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ../../base/
 images:
-- digest: sha256:4d359380e3b5d3cca7547869c1ada878074c8137252d9422ac5ff2c16fa80365
+- digest: sha256:67cd86f833a1d63c9d94f9460a3cd7dea22d330fb58d5de754c4f262aa7122ef
   name: dotnet-6.0
   newName: quay.io/rawatsunil3677/movie-listing
