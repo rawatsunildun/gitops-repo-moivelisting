@@ -37,6 +37,8 @@ spec:
       name: update-digest
       resources: {}
       script: >
+        ls git-update-digest-workdir
+
         cd git-update-digest-workdir/$(params.KUSTOMIZATION_PATH)
 
         /app/kustomize edit set image
