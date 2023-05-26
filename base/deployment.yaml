@@ -11,7 +11,6 @@ metadata:
       [{"from":{"kind":"ImageStreamTag","name":"movielisting:latest","namespace":"dev-netcore-movielisting"},"fieldPath":"spec.template.spec.containers[?(@.name==\"movielisting\")].image","pause":"false"}]
     openshift.io/generated-by: OpenShiftWebConsole
   name: movielisting
-  namespace: dev-netcore-movielisting
   labels:
     app: movielisting
     app.kubernetes.io/component: movielisting
