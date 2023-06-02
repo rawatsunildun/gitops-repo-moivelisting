@@ -5,8 +5,7 @@ metadata:
     alpha.image.policy.openshift.io/resolve-names: '*'
     app.openshift.io/route-disabled: 'false'
     app.openshift.io/vcs-ref: master
-    app.openshift.io/vcs-uri: 'https://github.com/rawatsunildun/movielisting'
-    deployment.kubernetes.io/revision: '8'
+    app.openshift.io/vcs-uri: 'https://github.com/rawatsunildun/movielisting'    
     image.openshift.io/triggers: >-
       [{"from":{"kind":"ImageStreamTag","name":"movielisting:latest","namespace":"dev-netcore-movielisting"},"fieldPath":"spec.template.spec.containers[?(@.name==\"movielisting\")].image","pause":"false"}]
     openshift.io/generated-by: OpenShiftWebConsole
